@@ -4,6 +4,8 @@ Lint the language annotations on fenced code blocks in Markdown. Missing, unknow
 
 As of 2026-10-13, no direct equivalent found as of 2026-10-13: general Markdown linters touch fences only incidentally; searches across GitHub (194 queries) and the web surfaced no standalone fence-language consistency checker.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 A fenced block without a language renders as plain monospace; a wrong alias (`js` in one chapter, `javascript` in the next) fragments highlighting styles; a typo'd language (`pyhton`) silently disables highlighting everywhere. Documentation CI rarely checks any of this because existing markdown linters treat fences as opaque text.
